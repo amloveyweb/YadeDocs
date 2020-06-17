@@ -157,6 +157,40 @@ public class HelloImporter : Importer
 }
 ```
 
+### Runtime API
+
+#### 1. IndexHelper
+
+**Public Static Methods**
+
+| Method | Description |
+| ------ | ---- |
+| IntToAlphaIndex | Convert int to alhpa based index. For example, 0 to A, 1 to B |
+| AlphaToIntIndex | Convert alpha based index to int index. For example, A to 0, B to 1 |
+| ToAlphaBasedCellIndex | Get alpha based cell index. For example, (0, 0) => A1, (1, 3) => D2 |
+|AlphaBasedToCellIndex|Convert alpha based index to cell index. For example, A1 => (0, 0)|
+
+#### 2. YadeSheetData
+
+**Public Properties**
+
+|Name| Description|
+|---|---|
+|FormulaEngine|Formula engine inside  sheet|
+
+**Public Fields**
+|Name| Description|
+|---|---|
+| data | Data of rows |
+| columnHeaders | Data of column headers|
+
+**Public Methods**
+
+|Name| Description|
+|---|---|
+| GetColumnCount |  Get columns count of sheet |
+| GetRowCount  | Get rows count of the sheet |
+| GetCell | Get cell at specific position |
 
 
 ### Support
