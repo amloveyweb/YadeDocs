@@ -5,7 +5,6 @@ Yade
 
 Yade (**Y**et **A**nother **D**ata **E**ditor). Yade is a extendable spreadsheet in side Unity Editor.
 
-
 ![Preview](Manual.assets/overview.png)
 
 ### Create Sheet File
@@ -68,6 +67,19 @@ For now, YADE support import data from excel files (.xlsx, xls) and CSV file.
 We can export data to CSV files by click the **Export** dropdown button. As below image show, we can export raw data (contains formula if exists) and data (don't contains formula) to CSV file.
 
 ![export](Manual.assets/export.png)
+
+### Seach Sheet
+
+We can search cell content via search input in right top corner of main window.
+
+![](Manual.assets/search.png)
+
+For search input:
+1. `Back Arrow` button will go to previous item of results
+2. `Forward Arrow` button will go to next item of results
+3. `Clear` button will clear search results
+4. `Enter` key will go to next item of results when search input text filed is focusing
+5. `SHIFT + ENTER` key will go to previous item of results when search input text is focusing
 
 ### Ping In Unity
 
