@@ -68,7 +68,7 @@ We can export data to CSV files by click the **Export** dropdown button. As belo
 
 ![export](Manual.assets/export.png)
 
-### Seach Sheet
+### Search Sheet
 
 We can search cell content via search input in right top corner of main window.
 
