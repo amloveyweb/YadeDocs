@@ -205,6 +205,20 @@ public class HelloImporter : Importer
 | GetRowCount  | Get rows count of the sheet |
 | GetCell | Get cell at specific position |
 
+### Player Maker Support
+
+After Player Maker installed in project, we can see the actions in Action Browser. Below is the actions of Yadesheet.
+
+|Action| Description|
+|---| ---|
+|Get Cell Value |  Get value of cell |
+|Get Cell Raw Value | Get raw value of cell |
+|Cet Cell Unity Object | Get unity object (texture, material, etc) of the cell |
+|Get Cell By Index | Get cell by row and column index |
+| Get Cell by Alpha Index | Get cell by alpha based index of row and column |
+| Set Cell Raw Value by Alpha Index | set raw value of cell by alpha based index of row and column |
+|Set  Cell Raw Value | Set raw value of cell by row and column index |
+
 
 ### Support
 
