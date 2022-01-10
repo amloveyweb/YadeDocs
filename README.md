@@ -35,7 +35,20 @@ Drag assets from Project Window to yade sheet or using the formula function `ASS
 
 Above formula will create a asset cell which point to the asset icon.json
 
-#### 6. Use Formula
+#### 6. Add Enum Cell
+
+Set raw value of cell following the format below:
+
+> =ENUM("[Type]", "[MemberName]")
+
+* `[Type]` threshold is the full name of the enum type
+* `[EnumName]` is the name of a member of enum type
+
+For example:
+
+> =ENUM("UnityEngine.DeviceType", "Console")
+
+#### 7. Use Formula
 
 Currently, Yade supports below functions and operators:
 
@@ -47,14 +60,15 @@ Currently, Yade supports below functions and operators:
 * CONCAT
 * AVERAGE
 * ASEET
+* ENUM
 
 Operators:
 
-	* Mins
-	* Add
-	* Multiply
-	* Divide
-	* Power
+* Mins
+* Add
+* Multiply
+* Divide
+* Power
 
 ### Import From Files
 
@@ -85,15 +99,83 @@ For search input:
 
 Click the **Map Location** icon button in toolbar will ping current sheet in **Project Window** of unity editor.
 
-### Column Header Alias
+### Column Header Settings
 
-We can add an alias name of a column header instead of just displaying as alpha based index 'A' or 'B'. We can edit and toggle column header alias via the drop down button as below show
+#### Change Settings
+
+We can open the **Column Header Settings** window by clicking the button on the toolbar as below image show: 
 
 ![column_header_dropdown](Manual.assets/column_header_dropdown-2143863.png)
 
-A image preview show column changes before and after column header alias turn on:
 
-![](Manual.assets/column_header_alias.png)
+
+Column Header Settings window will display as below in new sheet without header setting before:
+
+![CHS](Manual.assets/ColumnHeaderSettings.png)
+
+
+
+Click the `+` button at right bottom corner will create a column record.
+
+![CHR](Manual.assets/CHR.png)
+
+* **Index Field**: Click the drop to select the column we want to set
+
+* **Alias**: Name or short description
+
+* **Filed**: Used for built-in code generator to generate Filed name of class, only can input words only combine with digit, alpha and `_`, and cannot start with digit
+
+* **Type**: Used for built-in code generator to generate type of filed in class. If cannot find the type in dropdown menu, we can add new types to dropdown list by
+
+  * **Method 1**: Call `DataTypeMapper.RegisterType` method in static constructor of any class. If custom class we also can used Method 2.
+
+  ```c#
+  public class TypeRegister
+  {
+      static TypeRegister()
+      {
+          DataTypeMapper.RegisterType<DeviceType>(10001);
+      }
+  }
+  ```
+
+  In the sample, we will register the enum `UnityEngine.DeviceType` to the dropdown list. **Note that, the type key should be unique that larger than 100**
+
+  * **Method 2**: If it's custom class, implement interface `ICellParser` and add attribute `TypeKey` to it
+
+  ```C#
+  [TypeKey(10002)]
+  public class NumberData : ICellParser
+  {
+    public int index;
+    public int year;
+  
+    public void ParseFrom(string s)
+    {
+      var temp = s.Split(new char[] { ',' }, System.StringSplitOptions.RemoveEmptyEntries);
+      if (temp.Length == 2)
+      {
+        index = int.Parse(temp[0]);
+        year = int.Parse(temp[1]);
+      }
+    }
+  }
+  ```
+
+#### Display Headers
+
+Right click the header area
+
+![](Manual.assets/column_header_display.png)
+
+
+
+### Code Generator
+
+Click the `<>` icon button will open the Code Generator window. Input the class name, preview area will update automatically. **NOTE: class name can only be words only combine with digit, alpha and `_`, and cannot start with digit**.
+
+![cc](Manual.assets/cc.png)
+
 
 ### Extensions
 
@@ -205,6 +287,12 @@ public class HelloImporter : Importer
 | GetRowCount  | Get rows count of the sheet |
 | GetCell | Get cell at specific position |
 
+**Extension Methods**
+|Name| Description|
+|---|---|
+| AsList<T> | Parse data to a List<T> |
+| AsDictionary<T>() | Parse data as Dictionary<T> |
+
 ### Player Maker Support
 
 After Player Maker installed in project, we can see the actions in Action Browser. Below is the actions of Yadesheet.
@@ -218,7 +306,6 @@ After Player Maker installed in project, we can see the actions in Action Browse
 | Get Cell by Alpha Index | Get cell by alpha based index of row and column |
 | Set Cell Raw Value by Alpha Index | set raw value of cell by alpha based index of row and column |
 |Set  Cell Raw Value | Set raw value of cell by row and column index |
-
 
 ### Support
 
