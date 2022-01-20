@@ -288,6 +288,7 @@ public class HelloImporter : Importer
 | GetCell | Get cell at specific position |
 
 **Extension Methods**
+
 |Name| Description|
 |---|---|
 | AsList<T> | Parse data to a List<T> |
