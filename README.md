@@ -1,6 +1,3 @@
-Yade
-----
-
 ### Introduction
 
 Yade (**Y**et **A**nother **D**ata **E**ditor). Yade is a extendable spreadsheet in side Unity Editor.
@@ -129,7 +126,7 @@ Click the `+` button at right bottom corner will create a column record.
 
   * **Method 1**: Call `DataTypeMapper.RegisterType` method in static constructor of any class. If custom class we also can used Method 2.
 
-  ```c#
+  ```csharp
   public class TypeRegister
   {
       static TypeRegister()
@@ -143,7 +140,7 @@ Click the `+` button at right bottom corner will create a column record.
 
   * **Method 2**: If it's custom class, implement interface `ICellParser` and add attribute `TypeKey` to it
 
-  ```C#
+  ```csharp
   [TypeKey(10002)]
   public class NumberData : ICellParser
   {
@@ -183,7 +180,7 @@ Click the `<>` icon button will open the Code Generator window. Input the class 
 
 Create a file under **Editor** folder and create an class inhierted from class `FormulaFunction` . Below Sample code will create a function called `Hello` and it return fixed string `Supper man` .
 
-```c#
+```csharp
 using Yade.Runtime.Formula;
 
 public class Hello : FormulaFunction
@@ -207,7 +204,7 @@ public class Hello : FormulaFunction
 
 Create a file under **Editor** folder and create an class inhierted from class `Exporter` . Below sample create a exporter menu named `Hello Exporter` .
 
-```c#
+```csharp
 using Yade.Editor;
 
 public class HelloExporter : Exporter
@@ -231,7 +228,7 @@ public class HelloExporter : Exporter
 
 Create a file under **Editor** folder and create an class inhierted from class `Exporter` . Below sample create a exporter menu named `Hello Exporter` .
 
-```C#
+```csharp
 using Yade.Editor;
 
 public class HelloImporter : Importer
@@ -293,13 +290,11 @@ public class HelloImporter : Importer
 |Name| Description|
 |---|---|
 | AsList<T> | Parse data to a List<T> |
-| AsDictionary<T>() | Parse data as Dictionary<T> |
- 
- 
+| AsDictionary<T> | Parse data as Dictionary<T> |
 
-### Player Maker Support
+### Playmaker Support
 
-After Player Maker installed in project, we can see the actions in Action Browser. Below is the actions of Yadesheet.
+After Playmaker installed in project, we can see the actions in Action Browser. Below is the actions of Yadesheet.
 
 |Action| Description|
 |---| ---|
@@ -313,4 +308,4 @@ After Player Maker installed in project, we can see the actions in Action Browse
 
 ### Support
 
-please visit https://www.amlovey.com/yadeDocs for more details. Or drop an email to <amlovey@qq.com>.
+Send an email to <amlovey@qq.com>.
