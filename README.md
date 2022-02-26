@@ -1,8 +1,8 @@
 # Yade Sheet
 
-### Introduction
+> **Yade Sheet** (**Y**et **A**nother **D**ata **E**ditor) is a extendable spreadsheet inside Unity Editor.
 
-Yade (**Y**et **A**nother **D**ata **E**ditor). Yade is a extendable spreadsheet in side Unity Editor.
+<a href='https://forum.unity.com/threads/yade-spreadsheet-inside-unity-editor.906947/?aid=1011lGoJ' target="_blank"> Forum </a>&nbsp; |&nbsp; <a href='mailto:amlovey@qq.com'> Email </a> &nbsp;|&nbsp; <a href='https://assetstore.unity.com/packages/tools/utilities/yade-sheet-171399?aid=1011lGoJ'  target="_blank"> Purchase from Asset Store </a> 
 
 ![Preview](Manual.assets/overview.png)
 
