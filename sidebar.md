@@ -13,8 +13,8 @@
 
 - Extension
     - [Add Fomula Function](README.md#add-fomula-function)
-    - [Add Data Importer](README.md#add-a-data-importer)
     - [Add Data Exporter](README.md#add-a-data-exporter)
+    - [Add Data Importer](README.md#add-a-data-importer)
 
 - Runtime API
     - [Index Helper](README.md#indexhelper)
