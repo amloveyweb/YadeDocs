@@ -10,21 +10,21 @@ Right click in Project Window and select **Create -> Yade Sheet** Menu to create
 
 ### Edit Sheet
 
-#### 1. Auto Fill
+#### Auto Fill
 
 Left mouse down on the auto fill handle in right bottom corner of selector and drag to auto fill cells
 
-#### 2. Add Row/Column or Delete Row/Column
+#### Add Row/Column or Delete Row/Column
 
 Right click on selected cells and select items to add or delete row/columns
 
 ![contextMenu](Manual.assets/contextMenu.png)
 
-#### 4. Delete Cell
+#### Delete Cell
 
 Right click on selected cells and select  `Clear Contents` item or Press `Delete` key on the keyboard will delete selected cells
 
-#### 5. Add Asset Cell
+#### Add Asset Cell
 
 Drag assets from Project Window to yade sheet or using the formula function `ASSET`. For example:
 
@@ -32,7 +32,7 @@ Drag assets from Project Window to yade sheet or using the formula function `ASS
 
 Above formula will create a asset cell which point to the asset icon.json
 
-#### 6. Add Enum Cell
+#### Add Enum Cell
 
 Set raw value of cell following the format below:
 
@@ -45,7 +45,7 @@ For example:
 
 > =ENUM("UnityEngine.DeviceType", "Console")
 
-#### 7. Use Formula
+#### Use Formula
 
 Currently, Yade supports below functions and operators:
 
@@ -176,7 +176,7 @@ Click the `<>` icon button will open the Code Generator window. Input the class 
 
 ### Extensions
 
-#### 1. Add Fomula Function
+#### Add Fomula Function
 
 Create a file under **Editor** folder and create an class inhierted from class `FormulaFunction` . Below Sample code will create a function called `Hello` and it return fixed string `Supper man` .
 
@@ -200,7 +200,7 @@ public class Hello : FormulaFunction
 
 
 
-#### 2. Add A Data Exporter
+#### Add A Data Exporter
 
 Create a file under **Editor** folder and create an class inhierted from class `Exporter` . Below sample create a exporter menu named `Hello Exporter` .
 
@@ -224,7 +224,7 @@ public class HelloExporter : Exporter
 
 
 
-#### 3. Add A Data Importer
+#### Add A Data Importer
 
 Create a file under **Editor** folder and create an class inhierted from class `Exporter` . Below sample create a exporter menu named `Hello Exporter` .
 
@@ -250,7 +250,7 @@ public class HelloImporter : Importer
 
 ### Runtime API
 
-#### 1. IndexHelper
+#### IndexHelper
 
 **Public Static Methods**
 
@@ -261,7 +261,7 @@ public class HelloImporter : Importer
 | ToAlphaBasedCellIndex | Get alpha based cell index. For example, (0, 0) => A1, (1, 3) => D2 |
 |AlphaBasedToCellIndex|Convert alpha based index to cell index. For example, A1 => (0, 0)|
 
-#### 2. YadeSheetData
+#### YadeSheetData
 
 **Public Properties**
 
