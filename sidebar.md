@@ -4,12 +4,6 @@
 
 - Features
     - [Edit Sheet](README.md#edit-sheet)
-        <!-- - [Auto Fill](README.md#auto-fill)
-        - [Add or Delete Rows/Columns](README.md#add-rowcolumn-or-delete-rowcolumn)
-        - [Delete Cell](README.md#delete-cell)
-        - [Add Asset Cell](README.md#add-asset-cell)
-        - [Add Enum Cell](README.md#add-enum-cell)
-        - [Use Formula](README.md#use-formula) -->
     - [Import From Files](README.md#import-from-files)
     - [Export To Fiels](README.md#export-to-files)
     - [Searth Sheet](README.md#search-sheet)
