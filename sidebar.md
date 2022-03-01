@@ -1,5 +1,6 @@
 - Getting Started
     - [Introduction](Introduction.md)
+    - [Getting Stared](GettingStarted.md)
 
 - Spreadsheet Editor
     - [General](SpreadsheetEditor.md#general)

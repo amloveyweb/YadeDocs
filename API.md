@@ -44,7 +44,41 @@
 
 ### YadeDatabase
 
+**Public Properties**
+
+|Name| Description|
+|---|---|
+|Sheets|Sheets in the database |
+
+**Public Methods**
+
+|Name| Description|
+|---|---|
+| Query(sheetName, alphaIndex) | Query sheet to get a cell by alpha index |
+| Query(sheetName, row, column) | Query sheet to get a cell by row and column index |
+| Query(sheetName, predicate)| Query sheet to get a collection of typed data |
+| Query(sheetNames, predicate) | Query sheets to get a collection of typed data |
+| MapQuery(sheetName, predicate) | Query sheet to get a dictionary with the first column of sheet as Keys of the dictionary. Rows with null or empty value of first column will be ignored. |
+| QueryByKey(sheetName, key) | Get a typed class row of sheet by key. NOTE: The first column of a row is the key |
+
 ### YadeDB
+
+**Public Fields**
+
+|Name| Description|
+|---|---|
+|DefaultDB|Deafult databse in Resources folder. Value is "YadeDB" |
+
+**Public static methods**
+
+|Name| Description|
+|---|---|
+| GetDatabase(database) | Get database by name  |
+| Q(sheetName, alphaIndex, database) | Query sheet to get a cell by alpha index |
+| Q(sheetName, row, column, database) | Query sheet to get a cell by row and column index |
+| Q(sheetName, predicate, database) | Query sheet to get a collection of typed data |
+| MapQ(sheetName, predicate, database) | Query sheet to get a dictionary with the first column of sheet as Keys of the dictionary. Rows with null value of first column will be ignored.|
+| QByKey(sheetName, key, database) | Get a typed class row of sheet by key. NOTE: The first column of a row is the key|
 
 ### Playmaker Support
 
@@ -56,6 +90,8 @@ After Playmaker installed in project, we can see the actions in Action Browser. 
 |Get Cell Raw Value | Get raw value of cell |
 |Cet Cell Unity Object | Get unity object (texture, material, etc) of the cell |
 |Get Cell By Index | Get cell by row and column index |
-| Get Cell by Alpha Index | Get cell by alpha based index of row and column |
-| Set Cell Raw Value by Alpha Index | set raw value of cell by alpha based index of row and column |
+|Get Cell by Alpha Index | Get cell by alpha based index of row and column |
+|Set Cell Raw Value by Alpha Index | set raw value of cell by alpha based index of row and column |
 |Set  Cell Raw Value | Set raw value of cell by row and column index |
+|Yade DB Query Cell By Alpha Index | Query cell by alpha index using YadeDB |
+|Yade DB Query Cell By Index | Query cell by index using YadeDB |
