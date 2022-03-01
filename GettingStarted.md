@@ -2,11 +2,11 @@
 
 Yade is easy to use. Let's following below steps to go through Yade featuers.
 
-#### 1. Create Sheet File
+### 1. Create Sheet File
 
 Right click in Project Window and select **Create -> Yade Sheet** Menu to create a yade sheet file. Let's name it `TestSheet`. Double click the sheet file to start editing.
 
-#### 2. Edit Sheet file
+### 2. Edit Sheet file
 
 Double click the yadesheet file will open Spreadsheet Editor. Let's add some data to `A1` and `B1`.
 
@@ -14,7 +14,7 @@ Double click the yadesheet file will open Spreadsheet Editor. Let's add some dat
 |--|--|
 |Hello | Samples|
 
-#### 3. Access Cell
+### 3. Access Cell
 
 Create a script named `Test.cs` in Unity Project Window and copy below content to the script.
 
@@ -39,7 +39,7 @@ After save script content and script reimported. Drag the script to any GameObje
 
 Click play button, we should see `"Hello Samples"` will ouput to Unity Editor Console Window.
 
-#### 4. Deserialize sheet to C# objects
+### 4. Deserialize sheet to C# objects
 
 We also can deserialize sheet data to c# objects. First, we need creat a class, say it's name is `Data`. 
 
@@ -61,13 +61,13 @@ Debug.Log(list[0].B);
 
 Output of above code is the same as section #3
 
-### 4. Use YadeDatabase
+### 5. Use YadeDatabase
 
 Create `Resources` folder if there are not exists. We right click folder and execute the menu **Create** -> **YadeDatabase**, will create a YadeDatabase asset with default name `YadeDB`.
 
 Let's drag the yadesheet to the inspector of YadeDatabase asset.
 
-### 5. Use YadeDB
+### 6. Use YadeDB
 
 Now we can access the data using YadeDB Utilites like:
 
@@ -77,7 +77,7 @@ YadeDB.Q("TestSheet", "A1").GetValue();
 YadeDB.Q("TestSheet", 1, 0).GetValue();
 ```
 
-### 6. Full Sample Code
+### 7. Full Sample Code
 
 We have use three ways to access sheet data, below is the full sample code:
 
