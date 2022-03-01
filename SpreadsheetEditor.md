@@ -1,16 +1,6 @@
-# Yade Sheet
+# Spreadsheet Editor
 
-> **Yade Sheet** (**Y**et **A**nother **D**ata **E**ditor) is a extendable spreadsheet inside Unity Editor.
-
-<a href='https://forum.unity.com/threads/yade-spreadsheet-inside-unity-editor.906947/?aid=1011lGoJ' target="_blank"> Forum </a>&nbsp; |&nbsp; <a href='mailto:amlovey@qq.com'> Email </a> &nbsp;|&nbsp; <a href='https://assetstore.unity.com/packages/tools/utilities/yade-sheet-171399?aid=1011lGoJ'  target="_blank"> Purchase from Asset Store </a> 
-
-![Preview](Manual.assets/overview.png)
-
-### Create Sheet File
-
-Right click in Project Window and select **Create -> Yade Sheet** Menu to create a yade sheet file, double click the file to start editing.
-
-### Edit Sheet
+### General
 
 #### Auto Fill
 
@@ -69,13 +59,15 @@ Operators:
 * Divide
 * Power
 
-### Import From Files
+### Import and Export
+
+#### Import From Files
 
 For now, YADE support import data from excel files (.xlsx, xls) and CSV file.
 
 ![import](Manual.assets/import.png)
 
-### Export To Files
+#### Export To Files
 
 We can export data to CSV files by click the **Export** dropdown button. As below image show, we can export raw data (contains formula if exists) and data (don't contains formula) to CSV file.
 
@@ -98,9 +90,9 @@ For search input:
 
 Click the **Map Location** icon button in toolbar will ping current sheet in **Project Window** of unity editor.
 
-### Column Header Settings
+### Column Headers
 
-#### Change Settings
+#### Change Column Headers Settings
 
 We can open the **Column Header Settings** window by clicking the button on the toolbar as below image show: 
 
@@ -174,140 +166,3 @@ Right click the header area
 Click the `<>` icon button will open the Code Generator window. Input the class name, preview area will update automatically. **NOTE: class name can only be words only combine with digit, alpha and `_`, and cannot start with digit**.
 
 ![cc](Manual.assets/cc.png)
-
-
-### Extensions
-
-#### Add Fomula Function
-
-Create a file under **Editor** folder and create an class inhierted from class `FormulaFunction` . Below Sample code will create a function called `Hello` and it return fixed string `Supper man` .
-
-```csharp
-using Yade.Runtime.Formula;
-
-public class Hello : FormulaFunction
-{
-    public override object Evalute()
-    {
-        return "Supper man";
-    }
-
-    public override string GetName()
-    {
-        return "HELLO";
-    }
-}
-
-```
-
-
-
-#### Add A Data Exporter
-
-Create a file under **Editor** folder and create an class inhierted from class `Exporter` . Below sample create a exporter menu named `Hello Exporter` .
-
-```csharp
-using Yade.Editor;
-
-public class HelloExporter : Exporter
-{
-    public override bool Execute(AppState state)
-    {
-        // Do logic of exporter: read data from AppState.data and write to other files
-        return true;
-    }
-
-    public override string GetMenuName()
-    {
-        return "Hello Exporter";
-    }
-}
-```
-
-
-
-#### Add A Data Importer
-
-Create a file under **Editor** folder and create an class inhierted from class `Exporter` . Below sample create a exporter menu named `Hello Exporter` .
-
-```csharp
-using Yade.Editor;
-
-public class HelloImporter : Importer
-{
-    public override bool Execute(AppState state)
-    {
-        // Do logic of importer: loading data from datasource and write them into AppState.data
-      	
-      	// If return result is true, yade will refresh ui after importing completed
-        return true;
-    }
-
-    public override string GetMenuName()
-    {
-        return "Hello Importer";
-    }
-}
-```
-
-### Runtime API
-
-#### IndexHelper
-
-**Public Static Methods**
-
-| Method | Description |
-| ------ | ---- |
-| IntToAlphaIndex | Convert int to alhpa based index. For example, 0 to A, 1 to B |
-| AlphaToIntIndex | Convert alpha based index to int index. For example, A to 0, B to 1 |
-| ToAlphaBasedCellIndex | Get alpha based cell index. For example, (0, 0) => A1, (1, 3) => D2 |
-|AlphaBasedToCellIndex|Convert alpha based index to cell index. For example, A1 => (0, 0)|
-
-#### YadeSheetData
-
-**Public Properties**
-
-|Name| Description|
-|---|---|
-|FormulaEngine|Formula engine inside  sheet|
-
-**Public Fields**
-
-|Name| Description|
-|---|---|
-| data | Data of rows |
-| columnHeaders | Data of column headers|
-
-**Public Methods**
-
-|Name| Description|
-|---|---|
-| GetColumnCount |  Get columns count of sheet |
-| GetRowCount  | Get rows count of the sheet |
-| GetCell | Get cell at specific position |
-
-**Extension Methods**
-
-
-|Name| Description|
-|---|---|
-| AsList<T> | Parse data to a List<T> |
-| AsDictionary<T> | Parse data as Dictionary<T> |
-
-### Playmaker Support
-
-After Playmaker installed in project, we can see the actions in Action Browser. Below is the actions of Yadesheet.
-
-|Action| Description|
-|---| ---|
-|Get Cell Value |  Get value of cell |
-|Get Cell Raw Value | Get raw value of cell |
-|Cet Cell Unity Object | Get unity object (texture, material, etc) of the cell |
-|Get Cell By Index | Get cell by row and column index |
-| Get Cell by Alpha Index | Get cell by alpha based index of row and column |
-| Set Cell Raw Value by Alpha Index | set raw value of cell by alpha based index of row and column |
-|Set  Cell Raw Value | Set raw value of cell by row and column index |
-
-### Support
-
-Send an email to <amlovey@qq.com>.
