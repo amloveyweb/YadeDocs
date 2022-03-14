@@ -63,7 +63,10 @@ Operators:
 
 #### Import From Files
 
-For now, YADE support import data from excel files (.xlsx, xls) and CSV file.
+For now, YADE supports import data from:
+* Excel files (.xlsx, xls)
+* Google Sheets (public links) 
+* CSV file.
 
 ![import](Manual.assets/import.png)
 

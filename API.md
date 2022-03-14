@@ -95,3 +95,19 @@ After Playmaker installed in project, we can see the actions in Action Browser. 
 |Set  Cell Raw Value | Set raw value of cell by row and column index |
 |Yade DB Query Cell By Alpha Index | Query cell by alpha index using YadeDB |
 |Yade DB Query Cell By Index | Query cell by index using YadeDB |
+
+### FlowCanvas Support
+
+Download the FlowCanvas support Unity Package [HERE](https://www.amlovey.com/yadeDocs/Extensions/FlowCanvasIntegration.unitypackage)
+
+|Action| Description|
+|---| ---|
+|GetSheetCellByAlphaIndex| Get cell by alpha based index |
+|GetSheetCellByIndex |Get cell by index|
+|SetCellRawValueByIndex| Set raw value of cell by row and column index |
+|SetCellRawValueByAlphaIndex|Set raw value of cell by row and column index|
+|YadeDatabaseGetSheetCellByAlphaIndex|Get a cell from sheet by alpha index using Yade database|
+|YadeDatabaseGetSheetCellByIndex|Get a cell from sheet by index using Yade database|
+|GetCellValue|Get value of a cell|
+|GetCellRawValue|Get raw value of a cell|
+|GetCellUnityObject|Get unity object value of a cell|
