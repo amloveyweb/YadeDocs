@@ -100,7 +100,7 @@ After Playmaker installed in project, we can see the actions in Action Browser. 
 
 ### FlowCanvas Support
 
-Download the FlowCanvas support Unity Package [HERE](https://www.amlovey.com/yadeDocs/Extensions/FlowCanvasIntegration.unitypackage)
+Download the FlowCanvas support Unity Package [HERE](https://www.amlovey.com/YadeDocs/Extensions/FlowCanvasIntegration.unitypackage)
 
 |Action| Description|
 |---| ---|
