@@ -95,6 +95,8 @@ After Playmaker installed in project, we can see the actions in Action Browser. 
 |Set  Cell Raw Value | Set raw value of cell by row and column index |
 |Yade DB Query Cell By Alpha Index | Query cell by alpha index using YadeDB |
 |Yade DB Query Cell By Index | Query cell by index using YadeDB |
+|Yade DB Set Cell Raw Value By Index| Set cell raw value by index using YadeDB|
+|Yade DB Set Cell Raw Value By Alpha Index|Set cell raw value by alpha index using YadeDB|
 
 ### FlowCanvas Support
 
