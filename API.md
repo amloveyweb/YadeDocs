@@ -1,6 +1,6 @@
 ### Runtime API
 
-#### IndexHelper
+### IndexHelper
 
 **Public Static Methods**
 
@@ -11,13 +11,14 @@
 | ToAlphaBasedCellIndex | Get alpha based cell index. For example, (0, 0) => A1, (1, 3) => D2 |
 |AlphaBasedToCellIndex|Convert alpha based index to cell index. For example, A1 => (0, 0)|
 
-#### YadeSheetData
+### YadeSheetData
 
 **Public Properties**
 
 |Name| Description|
 |---|---|
 |FormulaEngine|Formula engine inside  sheet|
+|BinarySerializerEnabled| Turn binary serialization on or off |
 
 **Public Fields**
 
@@ -41,6 +42,9 @@
 |---|---|
 | AsList<T> | Parse data to a List<T> |
 | AsDictionary<T> | Parse data as Dictionary<T> |
+| SetRawValue | Set raw value of cell |
+| Serialize | Serialize data to byte array |
+| Deserialize | Deserialize byte array to data |
 
 ### YadeDatabase
 
@@ -49,6 +53,7 @@
 |Name| Description|
 |---|---|
 |Sheets|Sheets in the database |
+|BinarySerializerEnabled| Turn binary serialization on or off |
 
 **Public Methods**
 
@@ -60,6 +65,8 @@
 | Query(sheetNames, predicate) | Query sheets to get a collection of typed data |
 | MapQuery(sheetName, predicate) | Query sheet to get a dictionary with the first column of sheet as Keys of the dictionary. Rows with null or empty value of first column will be ignored. |
 | QueryByKey(sheetName, key) | Get a typed class row of sheet by key. NOTE: The first column of a row is the key |
+| Serialize | Serialize data to byte array |
+| Deserialize | Deserialize byte array to data |
 
 ### YadeDB
 
@@ -79,6 +86,9 @@
 | Q(sheetName, predicate, database) | Query sheet to get a collection of typed data |
 | MapQ(sheetName, predicate, database) | Query sheet to get a dictionary with the first column of sheet as Keys of the dictionary. Rows with null value of first column will be ignored.|
 | QByKey(sheetName, key, database) | Get a typed class row of sheet by key. NOTE: The first column of a row is the key|
+| Serialize | Serialize data to byte array |
+| Deserialize | Deserialize byte array to data |
+| SetBinarySerializerEnabled | Turn binary serialization on or off |
 
 ### Playmaker Support
 

@@ -1,5 +1,16 @@
 # CHANGE LOG
 
+## Version 1.4.0
+
+- Add Binary Serialization support for YadeSheetData and YadeDatabase. These APIs are working when `BinarySerializerEnabled` property is set to true [Experimental]
+- Add `Ctrl + S` on Windows and `Cmd + S` on macOS to save data manually
+- Add support that Yade can be included in Packages Manager as local pacakges now
+- Improve alpha based cell index to cell index performance by caching
+- Improve that arrows keys and copy&paste shortcuts are works for for cell text input when editing cell data
+- Fix bug that after cell updated, `YadeDB.Q<T>()` method return list that contains old data
+- Fix bug that top cell edit not update value when data revert from version control software
+- Fix bug that data added by SetRawValue methods keep exits after exiting play mode in Unity Editor
+
 ## Version 1.3.0
 
 - Add support for importing Google Sheets (public links)

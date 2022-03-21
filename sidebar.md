@@ -14,6 +14,7 @@
     - [Access Sheet](Runtime.md#access-sheet)
     - [Deserializer](Runtime.md#deserializer)
     - [YadeDatabase](Runtime.md#yadedatabase)
+    - [Binary Serialization](BinarySerialization.md)
 
 - Extend Yade
     - [Add Fomula Function](Extendable.md#add-fomula-function)
