@@ -61,6 +61,14 @@ Debug.Log(list[0].B);
 
 Output of above code is the same as section #3
 
+We also can deserialize sheet data to dictionary like this:
+
+```csharp
+sheet.AsDictionary<string, Data>(item => item.A);
+```
+
+Above code will create a dictionary with first column as keys.
+
 ### 5. Use YadeDatabase
 
 Create `Resources` folder if there are not exists. We right click folder and execute the menu **Create** -> **YadeDatabase**, will create a YadeDatabase asset with default name `YadeDB`.
