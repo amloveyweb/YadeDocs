@@ -48,7 +48,7 @@ sheet.Deserialize(bytes);
 
 ### Online Samples
 
-[HERE](https://www.amlovey.com/YadeDocs/BS/index.html) is are online samples. Below is the code of the samples:
+[HERE](https://www.amlovey.com/YadeDocs/BS/index.html) is a online sample. Below is the code of the sample:
 
 ```csharp
 public class BinarySerializationTest : MonoBehaviour
