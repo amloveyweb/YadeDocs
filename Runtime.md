@@ -40,6 +40,6 @@ public class NumberData : ICellParser
 
 ### YadeDatabase
 
-[YadeDatabase](API.md#yadedatabase) is a group of Sheets, it provide more effective methods to query data of sheets.
+[YadeDatabase](YadeDatabase.md) is a group of Sheets, it provide more effective methods to query data of sheets.
 
-[YadeDB](API.md#yadedb) is the Utilites class for YadeDataBase.
+[YadeDB](YadeDB.md) is the Utilites class for YadeDataBase.

@@ -22,12 +22,12 @@
     - [Add Data Importer](Extendable.md#add-a-data-importer)
 
 - API References
-    - [Index Helper](API.md#indexhelper)
-    - [YadeSheetData](API.md#yadesheetdata)
-    - [YadeDatabase](API.md#yadedatabase)
-    - [YadeDB](API.md#yadedb)
-    - [Playmaker Support](API.md#playmaker-support)
-    - [FlowCanvas](API.md#flowcanvas-support)
+    - [Index Helper](IndexHelper.md)
+    - [YadeSheetData](YadeSheetData.md)
+    - [YadeDatabase](YadeDatabase.md)
+    - [YadeDB](YadeDB.md)
+    - [Playmaker Support](Playmaker.md)
+    - [FlowCanvas](FlowCanvas.md)
 
 - Support
     - [ChangeLog](ChangeLog.md)
