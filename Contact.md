@@ -9,4 +9,4 @@ Send email to [amlovey@qq.com](maito:amlovey@qq.com)
 Two ways to report an issue
 
 1. Send Email to [amlovey@qq.com](maito:amlovey@qq.com)
-2. Open an issue on [Github Issues](https://github.com/amloveyweb/shaderlabvscode/issues)
+2. Open an issue on [Github Issues](https://github.com/amloveyweb/YadeDocs/issues)
