@@ -30,4 +30,5 @@
     - [FlowCanvas](FlowCanvas.md#flowcanvas-support)
 
 - Support
+    - [Contact](Contact.md)
     - [ChangeLog](ChangeLog.md#change-log)
