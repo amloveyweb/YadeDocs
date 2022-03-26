@@ -1,6 +1,7 @@
+
 # Getting Stared
 
-Yade is easy to use. Let's following below steps to go through Yade featuers.
+Yade is easy to use. Let's following below steps to go through Yade features.
 
 ### 1. Create Sheet File
 
