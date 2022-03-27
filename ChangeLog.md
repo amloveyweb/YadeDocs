@@ -1,5 +1,19 @@
 # CHANGE LOG
 
+## Version 1.4.1
+
+**NEW:**
+- Invalid formulas or invalid value of formulas will show as `#N/A`
+- FlowCanvasIntegration.unitypackage included in package instead of downloading from web
+- Add Help icon button on toolbar of spreadsheet editor
+
+**IMPROVED:**
+- Update help url for YadeSheetData and YadeDatabase class
+- Combine Import and Export drop down to one
+
+**FIXED:**
+- Update BinarySerializationTest demo to make it works on WebGL
+
 ### Version 1.4.0
 
 **NEW:**

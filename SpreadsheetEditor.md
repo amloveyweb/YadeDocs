@@ -61,6 +61,8 @@ Operators:
 
 ### Import and Export
 
+![import](Manual.assets/import.png)
+
 #### Import From Files
 
 For now, YADE supports import data from:
@@ -68,13 +70,9 @@ For now, YADE supports import data from:
 * Google Sheets (public links) 
 * CSV file.
 
-![import](Manual.assets/import.png)
-
 #### Export To Files
 
 We can export data to CSV files by click the **Export** dropdown button. As below image show, we can export raw data (contains formula if exists) and data (don't contains formula) to CSV file.
-
-![export](Manual.assets/export.png)
 
 ### Search Sheet
 
