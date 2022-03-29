@@ -1,6 +1,6 @@
 # CHANGE LOG
 
-## Version 1.4.1
+### Version 1.4.1
 
 **NEW:**
 - Invalid formulas or invalid value of formulas will show as `#N/A`
