@@ -56,8 +56,7 @@ public class HelloImporter : Importer
     public override bool Execute(AppState state)
     {
         // Do logic of importer: loading data from datasource and write them into AppState.data
-      	
-      	// If return result is true, yade will refresh ui after importing completed
+        // If return result is true, yade will refresh ui after importing completed
         return true;
     }
 
