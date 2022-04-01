@@ -1,5 +1,24 @@
 # CHANGE LOG
 
+### Version 1.4.2
+
+**NEW:**
+- Add Sort Sheet By Column feature
+- Add ability to add context menu item to Spreadsheet Editor by inherit abstract class `ContextMenuItem` 
+
+
+**IMPROVED:**
+- Spreadsheet editor can remember last open folder when importing/exporting from files
+- Reduce Yade sheet file size by remove duplicate values stored
+- Improve Spreadsheet editor performance
+
+
+**FIXED:**
+- Fix YadeDatabase is not reset when Reload Domain is disabled in Enter Play Mode Setting of Unity Editor
+- Fix click on header will show context menu of cells instead of context menu of headers when selecting whole columns
+- Fix cell text alignment are not align to upper left
+
+
 ### Version 1.4.1
 
 **NEW:**

@@ -6,6 +6,7 @@
     - [General](SpreadsheetEditor.md#general)
     - [Import and Export](SpreadsheetEditor.md#import-and-export)
     - [Searching](SpreadsheetEditor.md#search-sheet)
+    - [Sort Sheet](SpreadsheetEditor.md#sort-sheet)
     - [Ping In Unity](SpreadsheetEditor.md#ping-in-unity)
     - [Column Headers](SpreadsheetEditor.md#column-headers)
     - [Code Generator](SpreadsheetEditor.md#code-generator)
@@ -20,6 +21,7 @@
     - [Add Fomula Function](Extendable.md#add-fomula-function)
     - [Add Data Exporter](Extendable.md#add-a-data-exporter)
     - [Add Data Importer](Extendable.md#add-a-data-importer)
+    - [Add Context Menu Item](Extendable.md#add-sheet-context-menu-item)
 
 - API References
     - [Index Helper](IndexHelper.md#indexhelper)

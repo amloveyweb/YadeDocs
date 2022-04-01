@@ -87,6 +87,10 @@ For search input:
 4. `Enter` key will go to next item of results when search input text filed is focusing
 5. `SHIFT + ENTER` key will go to previous item of results when search input text is focusing
 
+### Sort Sheet
+
+YADE supports sort sheet by column from A-Z or Z-A order. Right click the selected cells, and select sub menus of **Sort Sheet**.
+
 ### Ping In Unity
 
 Click the **Map Location** icon button in toolbar will ping current sheet in **Project Window** of unity editor.
