@@ -70,6 +70,23 @@ For now, YADE supports import data from:
 * Google Sheets (public links) 
 * CSV file.
 
+#### Bulk Import
+
+Open the Bulk Importer window form Tools -> Yade -> Bulk Importer menu
+
+![](Manual.assets/bulkimport.png)
+
+Select config file or click the `New` button will create an config template file to setting data sources.
+
+![](Manual.assets/configsample.png)
+
+For the format of  data source:
+
+- **SourceUrl:** the url of data we want to import
+- **SaveTo:** the YadeSheet to save the data
+- **SheetName:** the name of sheet we want to import. **Default it empty.** we can leave it as empty if csv file or just one sheets in excel/google sheets or just want to import first sheet
+- **Type:** the type of the source. Built-in types are `csv`, `excel`, `google`. **Default is empty.** If type value is empty, Yade will check the file name and detect the type
+
 #### Export To Files
 
 We can export data to CSV files by click the **Export** dropdown button. As below image show, we can export raw data (contains formula if exists) and data (don't contains formula) to CSV file.
