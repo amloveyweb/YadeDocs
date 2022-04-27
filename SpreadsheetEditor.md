@@ -78,14 +78,26 @@ Open the Bulk Importer window form Tools -> Yade -> Bulk Importer menu
 
 Select config file or click the `New` button will create an config template file to setting data sources.
 
+Exclude sheet name prefix default is `Source_` which means the sheet has name starts with `Source_` will be passed when importing. 
+
+The config file defines data sources show as below samples.
+
 ![](Manual.assets/configsample.png)
 
-For the format of  data source:
+**Format of  data source:**
 
 - **SourceUrl:** the url of data we want to import
-- **SaveTo:** the YadeSheet to save the data
+- **SaveTo:** the YadeSheet or path of YadeSheet or folder to save
 - **SheetName:** the name of sheet we want to import. **Default it empty.** we can leave it as empty if csv file or just one sheets in excel/google sheets or just want to import first sheet
 - **Type:** the type of the source. Built-in types are `csv`, `excel`, `google`. **Default is empty.** If type value is empty, Yade will check the file name and detect the type
+
+**Rules for the data sources:**
+
+1. For any csv file, Yade will mapping it to one Yade sheet
+2. For any google sheets or excel, if the **SheetName** is empty and **SaveTo** is a folder, Yade will auto mapping each sheet to Yade sheet asset
+3. For any google sheets or excel, if **SaveTo** is a Yade sheet asset (Yade sheet or Yade sheet asset file path) and the **SheetName** is not empty, importer will mapping the sheet specific to the Yade sheet asset
+4. For any google sheets or excel, if **SaveTo** is a Yade sheet asset (Yade sheet or Yade sheet asset file path) and the **SheetName** is empty, importer will mapping the first sheet to the Yade sheet asset
+
 
 #### Export To Files
 
