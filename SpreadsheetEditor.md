@@ -72,7 +72,7 @@ For now, YADE supports import data from:
 
 #### Bulk Import
 
-Open the Bulk Importer window form Tools -> Yade -> Bulk Importer menu
+Open the Bulk Importer window form **Tools -> Yade -> Bulk Importer** menu
 
 ![](Manual.assets/bulkimport.png)
 
@@ -94,9 +94,10 @@ The config file defines data sources show as below samples.
 **Rules for the data sources:**
 
 1. For any csv file, Yade will mapping it to one Yade sheet
-2. For any google sheets or excel, if the **SheetName** is empty and **SaveTo** is a folder, Yade will auto mapping each sheet to Yade sheet asset
-3. For any google sheets or excel, if **SaveTo** is a Yade sheet asset (Yade sheet or Yade sheet asset file path) and the **SheetName** is not empty, importer will mapping the sheet specific to the Yade sheet asset
-4. For any google sheets or excel, if **SaveTo** is a Yade sheet asset (Yade sheet or Yade sheet asset file path) and the **SheetName** is empty, importer will mapping the first sheet to the Yade sheet asset
+2. For any Google Sheets or Excel, if the **SheetName** is empty and **SaveTo** is a folder, Yade will auto mapping each sheet to Yade sheet asset
+3. For any Google Sheets or Excel, if the **SheetName** is not empty and **SaveTo** is a folder, Yade will mapping the sheet specific to a Yade sheet asset with same name
+4. For any google sheets or excel, if **SaveTo** is a Yade sheet asset (Yade sheet or Yade sheet asset file path) and the **SheetName** is not empty, Yade will mapping the sheet specific to the Yade sheet asset
+5. For any google sheets or excel, if **SaveTo** is a Yade sheet asset (Yade sheet or Yade sheet asset file path) and the **SheetName** is empty, Yade will mapping the first sheet to the Yade sheet asset
 
 
 #### Export To Files

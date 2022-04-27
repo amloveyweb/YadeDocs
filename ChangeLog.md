@@ -1,5 +1,9 @@
 # CHANGE LOG
 
+### Version 1.4.3
+
+**NEW:** Add bulk importer which supports import data from multiple data sources in one click, see the [online doucment about bulk importer.](https://www.amlovey.com/YadeDocs/#/SpreadsheetEditor?id=bulk-import)
+
 ### Version 1.4.2
 
 **NEW:**
