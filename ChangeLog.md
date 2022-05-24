@@ -3,8 +3,8 @@
 ### Version 1.4.5
 
 **NEW**
-- Add **ASSETS** function to support assets array. We can drag and drop assets to one cell in spreadsheet editor and data of the cell will deserilize to array or list of Unity Objects.
-- Add fill number series in Auto Fill
+- Add **ASSETS** function to support assets array. We can drag and drop assets to one cell in spreadsheet editor and data of the cell will deserilize to array or list of Unity Objects
+- Auto Fill supports fill number series now
 
 **FIX**
 - Fix cell contains access will show as not available after enter and then exit Play Mode
