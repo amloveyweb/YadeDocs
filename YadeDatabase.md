@@ -32,6 +32,10 @@ public class Data
 {
     [DataField(0)] public string A;
     [DataField(1)] public string B;
+
+    // ASSETS() function will mapping to array of Unity Objects,
+    // We can use C# array or list to deserialize it.
+    [DataField(2)] public Texture2D[] Textures;
 }
 
 var sheetName = "TestSheet";

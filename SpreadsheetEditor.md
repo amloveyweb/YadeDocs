@@ -4,7 +4,9 @@
 
 #### Auto Fill
 
-Left mouse down on the auto fill handle in right bottom corner of selector and drag to auto fill cells
+Left mouse down on the auto fill handle in right bottom corner of selector and drag to auto fill cells.
+
+For now, AutoFill supports fill number series. If we don't want to fill number series, just pressing the `SHIFT` key on keyboard when dragging auto fill handle.
 
 #### Add Row/Column or Delete Row/Column
 
@@ -48,10 +50,15 @@ Currently, Yade supports below functions and operators:
 * MAX
 * CONCAT
 * AVERAGE
-* ASEET
+* ASEET (return Unity Object)
+* ASSETS (return array of Unity Objects)
 * ENUM
 
-Operators:
+*NOTE:*
+> 1. Drag assets to spreadsheet editor will create **ASSET** function automatically. 
+> 2. Drag assets to spreadsheet editor **with `Ctrl`(Windows) or `Cmd`(macOS) key pressing** will create **ASSETS** function automatically
+
+**Operators:**
 
 * Mins
 * Add
@@ -98,7 +105,6 @@ The config file defines data sources show as below samples.
 3. For any Google Sheets or Excel, if the **SheetName** is not empty and **SaveTo** is a folder, Yade will mapping the sheet specific to a Yade sheet asset with same name
 4. For any google sheets or excel, if **SaveTo** is a Yade sheet asset (Yade sheet or Yade sheet asset file path) and the **SheetName** is not empty, Yade will mapping the sheet specific to the Yade sheet asset
 5. For any google sheets or excel, if **SaveTo** is a Yade sheet asset (Yade sheet or Yade sheet asset file path) and the **SheetName** is empty, Yade will mapping the first sheet to the Yade sheet asset
-
 
 #### Export To Files
 

@@ -1,5 +1,14 @@
 # CHANGE LOG
 
+### Version 1.4.5
+
+**NEW**
+- Add **ASSETS** function to support assets array. We can drag and drop assets to one cell in spreadsheet editor and data of the cell will deserilize to array or list of Unity Objects.
+- Add fill number series in Auto Fill
+
+**FIX**
+- Fix cell contains access will show as not available after enter and then exit Play Mode
+
 ### Version 1.4.3
 
 **NEW:** Add bulk importer which supports import data from multiple data sources in one click, see the [online doucment about bulk importer.](https://www.amlovey.com/YadeDocs/#/SpreadsheetEditor?id=bulk-import)
