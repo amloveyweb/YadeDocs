@@ -159,9 +159,9 @@ Click the `+` button at right bottom corner will create a column record.
 
 * **Type**: Used for built-in code generator to generate type of filed in class. If cannot find the type in dropdown menu, we can add new types to dropdown list by
 
-  * **Method 1**: Call `DataTypeMapper.RegisterType` method in static constructor of any class. If custom class we also can used Method 2.
+  * **Method 1**: Call `DataTypeMapper.RegisterType` method in static constructor of any class. If custom class or enum we also can used Method 2.
 
-  ```csharp
+```csharp
   public class TypeRegister
   {
       static TypeRegister()
@@ -169,11 +169,12 @@ Click the `+` button at right bottom corner will create a column record.
           DataTypeMapper.RegisterType<DeviceType>(10001);
       }
   }
-  ```
+```
 
   In the sample, we will register the enum `UnityEngine.DeviceType` to the dropdown list. **Note that, the type key should be unique that larger than 100**
 
-  * **Method 2**: If it's custom class, implement interface `ICellParser` and add attribute `TypeKey` to it
+  * **Method 2**: If it's custom class, implement interface `ICellParser` and add attribute `TypeKey` to it. For custom enum we only need to add attribute `TypeKey`.
+
 
   ```csharp
   [TypeKey(10002)]
