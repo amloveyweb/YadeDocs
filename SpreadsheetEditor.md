@@ -83,9 +83,9 @@ Open the Bulk Importer window form **Tools -> Yade -> Bulk Importer** menu
 
 ![](Manual.assets/bulkimport.png)
 
-Select config file or click the `New` button will create an config template file to setting data sources.
+Select config file or click the `New` button will create an config template file to config data sources.
 
-Exclude sheet name prefix default is `Source_` which means the sheet has name starts with `Source_` will be passed when importing. 
+Exclude sheet name prefix default is `Source_` which means the sheet has name starts with `Source_` will be ignored when importing. 
 
 The config file defines data sources show as below samples.
 
