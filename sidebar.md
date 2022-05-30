@@ -16,6 +16,7 @@
     - [Deserializer](Runtime.md#deserializer)
     - [YadeDatabase](Runtime.md#yadedatabase)
     - [Binary Serialization](BinarySerialization.md#binary-serialization)
+    - [Online Sheet Data](GetOnlineSheet.md#online-sheet-data)
 
 - Extend Yade
     - [Add Fomula Function](Extendable.md#add-fomula-function)
@@ -28,6 +29,8 @@
     - [YadeSheetData](YadeSheetData.md#yadesheetdata)
     - [YadeDatabase](YadeDatabase.md#yadedatabase)
     - [YadeDB](YadeDB.md#yadedb)
+    - [OnlineCSVSheet](OnlineSheet.md#onlinecsvsheet)
+    - [OnlineGoogleSheet](OnlineSheet.md#onlinegooglesheet)
     - [Playmaker Support](Playmaker.md#playmaker-support)
     - [FlowCanvas](FlowCanvas.md#flowcanvas-support)
 

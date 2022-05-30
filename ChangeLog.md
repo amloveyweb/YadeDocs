@@ -1,5 +1,14 @@
 # CHANGE LOG
 
+### Version 1.4.6
+
+**NEW**
+- Add online sheet data support. Current support Google Sheets (public share link) and online CSV file
+
+**FIX**
+- Fix bug the CSV Exporter export empty data sometimes
+- Fix bug that Bulk Import Edit failed to import Google Sheets in some cases
+
 ### Version 1.4.5
 
 **NEW**

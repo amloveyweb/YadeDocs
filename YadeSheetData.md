@@ -32,6 +32,7 @@
 | SetRawValue | Set raw value of cell |
 | Serialize | Serialize data to byte array |
 | Deserialize | Deserialize byte array to data |
+| CopyTo | Copy sheet data to another YadeSheet |
 
 ### Code Samples
 
@@ -85,4 +86,8 @@ var bytes = yadesheet.Serialize();
 
 // And deserilize later from bytes
 yadesheet.Deserialize(bytes);
+
+// -------Data Copy---------------------//
+YadeSheetData other = ScriptableObject.CreateInstance<YadeSheetData>();
+yadesheet.CopyTo(other);
 ```
