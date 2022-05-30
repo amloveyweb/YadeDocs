@@ -3,7 +3,8 @@
 ### Version 1.4.6
 
 **NEW**
-- Add online sheet data support. Current support Google Sheets (public share link) and online CSV file
+- Add Online Sheet Data support. Current support Google Sheets (public share link) and online CSV file
+- Add Online Sheet Data Demo
 
 **FIX**
 - Fix bug the CSV Exporter export empty data sometimes
