@@ -5,6 +5,7 @@
 **NEW**
 - Add Online Sheet Data support. Current support Google Sheets (public share link) and online CSV file
 - Add Online Sheet Data Demo
+- Add **CopyTo** method to **YadeSheetData** class that can copy all sheet data from one Yade Sheet to anther Yade Sheet.
 
 **FIX**
 - Fix bug the CSV Exporter export empty data sometimes
