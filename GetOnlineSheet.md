@@ -20,6 +20,12 @@ public IEnumerator GetSheetDataFromGoogleSheets()
 }
 ```
 
+When open a sheet on a Google Sheet, the sheet id can show in the url link parameters (normally at the end of link). For example: 
+
+https://docs.google.com/spreadsheets/d/XXX/edit#gid=41631710
+
+The Sheet Id (GID) is 41631710.
+
 After get YadeSheetData instance, we can use [Binary Serialization](BinarySerialization.md#binary-serialization) to save data to local or update another sheet by [`YadeSheetData.CopyTo`](YadeSheetData.md#code-samples) method. Below is sample for save to local by BinarySerialization:
 
 ```csharp
