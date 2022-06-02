@@ -45,3 +45,4 @@ public IEnumerator GetSheetDataFromGoogleSheetsAndSaveToLocal()
 }
 ```
 
+Please keep in mind that ScriptableObject of Unity will not save runtime modified data, it will reset after restart. So that if we updated the Yade Sheet data in build using online sheet data, and want to load the data after application restart, we have to save updated sheet data to local using [Binary Serialization](BinarySerialization.md#binary-serialization).
