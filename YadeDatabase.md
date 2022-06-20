@@ -19,6 +19,7 @@ A database class that manage yadesheets as datatables.
 | Query\<T\>(sheetNames, predicate) | Query sheets to get a collection of typed data |
 | MapQuery\<T\>(sheetName, predicate) | Query sheet to get a dictionary with the first column of sheet as Keys of the dictionary. Rows with null or empty value of first column will be ignored. |
 | QueryByKey\<T\>(sheetName, key) | Get a typed class row of sheet by key. **NOTE: The first column of a row is the key** |
+| GetSheetByName(sheetName) | Get yade sheet instance by its name |
 | SetRawValue(sheetName, alphaIndex, rawText) | Set raw value of a cell in sheet. **NOTE: ASSET formula does not support in build** |
 | SetRawValue(sheetName, row, column, rawText)| Set raw value of a cell in sheet. **NOTE: ASSET formula does not support in build** |
 | Serialize | Serialize data to byte array |
