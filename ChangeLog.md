@@ -1,5 +1,32 @@
 # CHANGE LOG
 
+### Version 1.5.0
+
+**IMPROVE**:
+- 'ALT' + `ENTER` also support in top cell editor
+- Unity 2022 compatiblity
+
+**FIX**
+- Fix height of a row in spreadsheet editor is missing when there are no cells in row
+- Fix sometimes cannot edit cell in top cell editor
+- Fix use `ENTER` key to move to down cell will enter into edit mode
+
+### Version 1.4.8
+
+**NEW**
+- Spreadsheet editor supports `Alt`+ `Enter` to break a new line in cell
+
+**FIX**
+- Cannot input form keyboard on Unity 2022.1
+- YadeDB Query failed after yade sheet is renamed
+
+### Version 1.4.7
+
+**FIX**
+- Fix YadeDatabase get old data after copyto in some cases
+- Fix Yade Sheet reference missing in Unity Editor
+
+
 ### Version 1.4.6
 
 **NEW**
