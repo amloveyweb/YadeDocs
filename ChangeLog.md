@@ -1,5 +1,15 @@
 # CHANGE LOG
 
+### Version 1.5.1
+
+**NEW**
+- Add context menu for headers that supports: 
+    - Insert rows or columns
+    - Delete rows or columns
+    - Clear contents of selected rows or columns
+
+
+
 ### Version 1.5.0
 
 **IMPROVE**:
