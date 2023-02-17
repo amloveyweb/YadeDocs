@@ -3,8 +3,9 @@
 <details>
   <summary> <b>1. Odin Inspector show reference of Yadesheet type field of MonoBehaviour scripts is missing after double click or exiting play mode</b></summary>
   <p>
-  Please let your MonoBehaviour script inheirt the `YadeSerializedMonoBehaviour` class, this will fix the issue.
+  Please let your MonoBehaviour script inheirt the `YadeSerializedMonoBehaviour` class, this will fix the issue.</p>
 </details>
+</p>
 
 <p>
 <details>
@@ -12,6 +13,7 @@
 
 <p>
 Take Google Sheets for example. Create a script under Editor folder, and copy below script content to it. The only need to focus or change is the order of alias/type/field. See the comments in code.
+</p>
 
 ```csharp
 /// <summary>
@@ -140,3 +142,12 @@ internal class GoogleSheetsWithMetaBulkImport : GoogleBulkImportMethod
 }
 ```
 </details>
+</p>
+
+<p>
+<details>
+  <summary> <b>3. Online CSV data parsed incorrectly?</b></summary>
+  <p>
+  Yade only support utf8 encoding for now. If the csv file is utf8 with BOM, please change it to utf8</p>
+</details>
+</p>
