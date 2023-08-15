@@ -1,5 +1,20 @@
 # CHANGE LOG
 
+## Version 1.5.5
+
+**NEW**
+- Able to hide customized exporter/importer/conextmenu by override the `IsAvailable()` method
+
+**IMPROVE**
+- Improve Copy&Paste logic to support Copy from/To Excel or Goggle Sheets
+
+**FIX**
+- Fix bug that keyboard are not repsonse after tab switch many times
+- Fix bug that column settings are not changed accordingly after inserting or deleting a column
+- Fix bug that content of top cell editor are not updated accordingly after copying content to cell
+- Fix bug that column index are not update when there are many columns in some cases
+
+
 ### Version 1.5.1
 
 **NEW**
