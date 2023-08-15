@@ -41,6 +41,11 @@ public class HelloExporter : Exporter
     {
         return "Hello Exporter";
     }
+
+    public override bool IsAvailable(AppState state)
+    {
+        return true;
+    }
 }
 ```
 
@@ -63,6 +68,11 @@ public class HelloImporter : Importer
     public override string GetMenuName()
     {
         return "Hello Importer";
+    }
+
+    public override bool IsAvailable(AppState state)
+    {
+        return true;
     }
 }
 ```
@@ -112,6 +122,11 @@ public class AutoFillRandomNumber : ContextMenuItem
     public override string GetMenuName()
     {
         return "Auo Fill Random Number";
+    }
+
+    public override bool IsAvailable(AppState state)
+    {
+        return true;
     }
 }
 ```
